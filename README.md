@@ -4,9 +4,9 @@ Sebagai tugas praktikum: [1 - 3] Pemrograman Web II | Universitas Pelita Bangsa.
 
 ## 📖 Daftar Praktikum
 
-1. [Praktikum 1: PHP Framework CodeIgniter 4](##praktikum-1-php-framework-codeigniter-4)
-2. [Praktikum 2: Framework Lanjutan (CRUD)](##praktikum-2-framework-lanjutan-crud)
-3. [Praktikum 3: View Layout dan View Cell](##praktikum-3-view-layout-dan-view-cell) - UNDERWORK!
+1. [Praktikum 1: PHP Framework CodeIgniter 4](#praktikum-1-php-framework-codeigniter-4)
+2. [Praktikum 2: Framework Lanjutan (CRUD)](#praktikum-2-framework-lanjutan-crud)
+3. [Praktikum 3: View Layout dan View Cell](#praktikum-3-view-layout-dan-view-cell) - UNDERWORK!
 
 ---
 
@@ -17,7 +17,7 @@ Sebagai tugas praktikum: [1 - 3] Pemrograman Web II | Universitas Pelita Bangsa.
   > File: `php.ini`
 
   <p align="left">
-    <img src="/ss/php.jpg" width="500">
+    <img src="/ss/php.jpg" width="200">
   </p>
   
 Pada bagian extension, hilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
@@ -66,7 +66,7 @@ Jalankan perintah: `php spark routes` untuk melihat daftar route.
 link pada navigasi header dapat menampilkan tampilan dengan layout yang sama:
 
  <p align="left">
-    <img src="/ss/P1_04.jpg" width="500">
+    <img src="/ss/P1_04.jpg" width="700">
   </p>
   
 ---
@@ -78,7 +78,7 @@ link pada navigasi header dapat menampilkan tampilan dengan layout yang sama:
   > Buat Database terlebih dahulu.
   
   <p align="left">
-    <img src="/ss/P02_01.jpg" width="500">
+    <img src="/ss/P2_01.jpg" width="500">
   </p>
   
 ```sql
@@ -102,10 +102,10 @@ Disini saya melakukan sedikit modifikasi pada bagian Database supaya menggunakan
   > Konfigurasi Database melalui `app/config/database.php` dan beberapa file lainnya.
 
   <p align="left">
-    <img src="/ss/P02_02.jpg" width="500">
+    <img src="/ss/P2_02.jpg" width="500">
   </p>
   <p align="left">
-    <img src="/ss/P02_03.jpg" width="500">
+    <img src="/ss/P2_03.jpg" width="500">
   </p>
   
 Kita akan menghubungkan Database.php, Routes.php, dan style.css, serta menambahkan ArticleModel.php sebagai ORM untuk memudahkan pengelolaan database di Controller serta Article.php sebagai Controller untuk menangani artikel.
@@ -115,7 +115,7 @@ Kita akan menghubungkan Database.php, Routes.php, dan style.css, serta menambahk
   > CLI: `php spark serve` terlebih dahulu agar MVC berfungsi dengan baik.
 
   <p align="left">
-    <img src="/ss/P2_04.jpg" width="500">
+    <img src="/ss/P2_04.jpg" width="700">
   </p>
   
 Selanjutnya, kita akan menambahkan Views untuk: index.php (halaman artikel), dan admin_index.php (halaman manajemen artikel) dan membuat Views untuk form_edit.php dan form_add.php, serta menambahkan fungsi delete pada Controller agar dapat dikelola melalui admin_index.php .
