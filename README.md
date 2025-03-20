@@ -27,7 +27,7 @@ Pada bagian extension, hilangkan tanda ; (titik koma) pada ekstensi yang akan di
   > File: [Unduh CodeIgniter disini](https://codeigniter.com/download)
 
   <p align="left">
-    <img src="/ss/ci4.jpg" width="500">
+    <img src="/ss/ci4.jpg" width="600">
   </p>
   
 Ekstrak ke `www/ci4/` lalu Buka pada browser: `localhost/ci4/Public/`.
@@ -37,7 +37,7 @@ Ekstrak ke `www/ci4/` lalu Buka pada browser: `localhost/ci4/Public/`.
   > File: `spark` dan `mode development` pada `.env`.
 
   <p align="left">
-    <img src="/ss/P1_01.jpg" width="500">
+    <img src="/ss/P1_01.jpg" width="700">
   </p>
   
 CodeIgniter secara default menggunakan `mode production` sehingga error pada log disembunyikan.
@@ -45,7 +45,7 @@ CodeIgniter secara default menggunakan `mode production` sehingga error pada log
 **Memahami Konsep Framework: MVC atau Model-View-Controller**
 
   <p align="left">
-    <img src="/ss/P1_02.jpg" width="500">
+    <img src="/ss/P1_02.jpg" width="700">
   </p>
   
 1. `Model` - Bertanggung jawab atas pengelolaan data.
@@ -55,7 +55,7 @@ CodeIgniter secara default menggunakan `mode production` sehingga error pada log
 **Routing dan Controller**
 
   <p align="left">
-    <img src="/ss/P1_03.jpg" width="500">
+    <img src="/ss/P1_03.jpg" width="700">
   </p>
 
 Jalankan perintah: `php spark routes` untuk melihat daftar route.
@@ -78,7 +78,7 @@ link pada navigasi header dapat menampilkan tampilan dengan layout yang sama:
   > Buat Database terlebih dahulu.
   
   <p align="left">
-    <img src="/ss/P2_01.jpg" width="500">
+    <img src="/ss/P2_01.jpg" width="600">
   </p>
   
 ```sql
@@ -102,10 +102,10 @@ Disini saya melakukan sedikit modifikasi pada bagian Database supaya menggunakan
   > Konfigurasi Database melalui `app/config/database.php` dan beberapa file lainnya.
 
   <p align="left">
-    <img src="/ss/P2_02.jpg" width="500">
+    <img src="/ss/P2_02.jpg" width="700">
   </p>
   <p align="left">
-    <img src="/ss/P2_03.jpg" width="500">
+    <img src="/ss/P2_03.jpg" width="700">
   </p>
   
 Kita akan menghubungkan Database.php, Routes.php, dan style.css, serta menambahkan ArticleModel.php sebagai ORM untuk memudahkan pengelolaan database di Controller serta Article.php sebagai Controller untuk menangani artikel.
