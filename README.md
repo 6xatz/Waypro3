@@ -6,7 +6,7 @@ Sebagai tugas praktikum: [1 - 3] Pemrograman Web II | Universitas Pelita Bangsa.
 
 1. [Praktikum 1: PHP Framework CodeIgniter 4](#praktikum-1-php-framework-codeigniter-4)
 2. [Praktikum 2: Framework Lanjutan (CRUD)](#praktikum-2-framework-lanjutan-crud)
-3. [Praktikum 3: View Layout dan View Cell](#praktikum-3-view-layout-dan-view-cell) - UNDERWORK!
+3. [Praktikum 3: View Layout dan View Cell](#praktikum-3-view-layout-dan-view-cell)
 
 ---
 
