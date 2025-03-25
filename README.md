@@ -142,17 +142,17 @@ Lakukan modifikasi pada Database sehingga nanti bisa menggunakan 'Kategori' untu
 
 - Bagian 2:
 
-  > Sesuaikan kembali file `header.php, footer.php, ArticleModel.php` dan tambahkan beberapa file baru untuk Components.
+  > Sesuaikan kembali file `header.php, footer.php, ArticleModel.php` dan tambahkan beberapa file baru untuk Components beserta Views.
 
   <p align="left">
     <img src="/ss/P3_02.jpg" width="700">
   </p>
   
-Pada `app/views/components/latest_article.php` kamu bisa melakukan perubahan mulai dari sortir berdasarkan Tanggal maupun Kategori.
+Pada `app/views/components/article_latest.php` kamu bisa melakukan perubahan mulai dari sortir berdasarkan Tanggal maupun Kategori.
 
 - Bagian 3:
 
-  > CLI: `php spark serve` terlebih dahulu agar MVC berfungsi dengan baik.
+  > Disini saya menjadikan `Latest Article` sebagai widget pada sidebar.
 
   <p align="left">
     <img src="/ss/P3_03.jpg" width="700">
