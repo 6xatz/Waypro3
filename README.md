@@ -82,16 +82,15 @@ link pada navigasi header dapat menampilkan tampilan dengan layout yang sama:
   </p>
   
 ```sql
-CREATE DATABASE lab_ci4;
+CREATE DATABASE 6xatz;
 
-CREATE TABLE artikel (
-  id INT(11) AUTO_INCREMENT,
-  title VARCHAR(200) NOT NULL,
-  contain TEXT,
-  image VARCHAR(200),
-  status TINYINT(1) DEFAULT 0,
-  slug VARCHAR(200),
-  PRIMARY KEY(id)
+CREATE TABLE article (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(200) NOT NULL,
+    content TEXT,
+    image VARCHAR(200),
+    status TINYINT(1) DEFAULT 0,
+    slug VARCHAR(200) UNIQUE,
 );
 ```
   
@@ -119,6 +118,67 @@ Kita akan menghubungkan Database.php, Routes.php, dan style.css, serta menambahk
   </p>
   
 Selanjutnya, kita akan menambahkan Views untuk: index.php (halaman artikel), dan admin_index.php (halaman manajemen artikel) dan membuat Views untuk form_edit.php dan form_add.php, serta menambahkan fungsi delete pada Controller agar dapat dikelola melalui admin_index.php .
+
+---
+
+## Praktikum 3: View Layout dan View Cell
+
+- Bagian 1:
+
+  > Penyesuaian pada Database.
+  
+  <p align="left">
+    <img src="/ss/P3_01.jpg" width="600">
+  </p>
+  
+```sql
+ALTER TABLE Article
+ADD COLUMN category VARCHAR(100),
+ADD COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ADD COLUMN updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+```
+  
+Lakukan modifikasi pada Database sehingga nanti bisa menggunakan 'Kategori' untuk sortir.
+
+- Bagian 2:
+
+  > Sesuaikan kembali file `header.php, footer.php, ArticleModel.php` dan tambahkan beberapa file baru untuk Components.
+
+  <p align="left">
+    <img src="/ss/P3_02.jpg" width="700">
+  </p>
+  
+Pada `app/views/components/latest_article.php` kamu bisa melakukan perubahan mulai dari sortir berdasarkan Tanggal maupun Kategori.
+
+- Bagian 3:
+
+  > CLI: `php spark serve` terlebih dahulu agar MVC berfungsi dengan baik.
+
+  <p align="left">
+    <img src="/ss/P3_03.jpg" width="700">
+  </p>
+  
+Jadi ini adalah Hasil dan Tampilan akhir dari Praktikum 1 hingga 3 pada Pemrograman Web II.
+
+## Pertanyaan dari Praktikum 3
+
+1. Apa manfaat utama dari penggunaan View Layout dalam pengembangan aplikasi?
+
+| Manfaat                       | Deskripsi                                                               |
+| ----------------------------- | ------------------------------------------------------------------------|
+| Menyusun Template Konsisten   | Menggunakan satu layout untuk banyak halaman, memudahkan pemeliharaan   |
+| Meningkatkan Efisiensi Koding | Menghindari pengulangan kode dengan menyusun header, footer, dan sidebar|
+| Mempermudah Perubahan Tampilan| Cukup ubah satu layout untuk memperbarui tampilan seluruh aplikasi      |
+| Memisahkan Logika dan Tampilan| Mempermudah pengembangan dan debugging dengan struktur kode yang rapi   |
+
+2. Jelaskan perbedaan antara View Cell dan View biasa:
+
+| Fitur             | View Layout                                             | View Cell                                                   |
+| ----------------- | ------------------------------------------------------- | ----------------------------------------------------------- |
+| Fungsi            | Template utama yang mengatur struktur tampilan          | Komponen modular untuk bagian kecil seperti sidebar/widget  |
+| Fleksibilitas     | Digunakan untuk halaman penuh                           | Digunakan untuk bagian tertentu dalam tampilan              |
+| Pemakaian         | `extend()` dan `renderSection()`                        | `view_cell()`                                               |
+| Contoh Penggunaan | Layout dengan header, footer, sidebar                   | Daftar artikel terbaru, widget pencarian, dll               |
 
 ## Documentation
 
