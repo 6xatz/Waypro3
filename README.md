@@ -90,7 +90,7 @@ CREATE TABLE article (
     content TEXT,
     image VARCHAR(200),
     status TINYINT(1) DEFAULT 0,
-    slug VARCHAR(200) UNIQUE,
+    slug VARCHAR(200) UNIQUE
 );
 ```
   
